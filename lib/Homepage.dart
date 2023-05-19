@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
           return Center(child: CircularProgressIndicator());
         } else {
           return ListView.builder(
-            itemCount: 10,
+            itemCount: animeHomeData.length,
             itemBuilder: (context, index) {
               return Card(
                 color: Colors.white,
@@ -67,10 +67,7 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
 
-                  leading: Icon(
-                    Icons.movie,
-                    color: Colors.blue[800],
-                  ),
+                  leading: Image(image: NetworkImage(animeHomeData[index][2]),),
                   tileColor: Colors.white,
                   contentPadding: EdgeInsets.all(10),
                 ),

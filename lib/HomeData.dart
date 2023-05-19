@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:core';
-import 'Homepage.dart';
+
 
 import 'package:http/http.dart' as http;
 
@@ -17,7 +17,8 @@ Future<List> HomeData() async {
     for (int i = 1; i < 11; i++) {
       String aniname = data[i.toString()]['name'];
       int Idnum=data[i.toString()]['id'];
-      lst0.add([Idnum,aniname]);
+      String aniimg=data[i.toString()]['img'];
+      lst0.add([Idnum,aniname,aniimg]);
     }
   } else {
     print('try again');

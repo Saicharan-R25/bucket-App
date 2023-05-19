@@ -1,12 +1,11 @@
 import 'dart:async';
 
 import 'package:bucket/Homepage.dart';
-//import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-//import 'package:flutter/loginpage.dart';
 
-//import 'loginpage.dart';
-//import 'main.dart';
+import 'package:flutter/material.dart';
+
+
+
 
 class SplashScreen extends StatefulWidget {
   @override
